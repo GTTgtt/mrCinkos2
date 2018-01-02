@@ -1,4 +1,11 @@
-var colors = ['mediumorchid', 'lightcoral', 'blueviolet', 'mediumseagreen', 'darkslateblue'];
+var colors = [
+    'mediumorchid',
+    'lightcoral',
+    'blueviolet',
+    'mediumseagreen',
+    'darkslateblue'
+    // add more colors here (and dont forget to add ',' on previous color)
+];
 var color_flag = 0;
 
 function colorWheel(){
@@ -8,7 +15,7 @@ function colorWheel(){
         document.querySelector('#menu').style.borderBottomColor = colors[color_flag];
         document.querySelector('button').style.backgroundColor = colors[color_flag];
         
-        if(color_flag == 4) color_flag= 0;
+        if(color_flag == colors.length - 1) color_flag= 0;
         else color_flag++;
     }, 3000);
 }
