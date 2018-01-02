@@ -1,0 +1,69 @@
+header {
+    width: 100%;
+    height: 100%;
+    
+    #menu {
+        margin: 0 auto;
+        width: calc(100% - 40px);
+        height: 100px;
+        border-bottom: 1px solid $color1;
+        
+        #menu-icon {
+            position: absolute;
+            right: 0;
+            top: 32px;
+            width: 35px;
+            height: 35px;
+            background-image: url(../img/menu-button-of-three-horizontal-lines.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+            opacity: 0.57;
+        }
+    }
+    
+    #header-content {
+        padding: 0 20px;
+        height: calc(100% - 101px);
+        width: calc(100% - 40px);
+        overflow: hidden;
+        
+        
+        #headers {
+            height: calc(100% - 110px);
+            //background-color: azure;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        button {
+            position: absolute;
+            bottom: 20px;
+            color: white;
+            font-size: 30px;
+            width: calc(100% - 40px);
+            height: 70px;
+            background-color: $color1;
+            @include border-radius;
+        }
+    }
+}
+
+#header-content:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/23244094_1029738583835013_6247404116621106411_n.jpg), linear-gradient(white 5%, transparent 15%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    filter: blur(1px) contrast(10%) brightness(180%);
+    transform: scale(1.1);
+    
+}
