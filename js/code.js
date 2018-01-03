@@ -1,9 +1,8 @@
 var colors = [
-    'mediumorchid',
-    'lightcoral',
-    'blueviolet',
-    'mediumseagreen',
-    'darkslateblue'
+    '#7200BC',
+    '#6E5036',
+    '#322C6D',
+    '#DC6370'
     // add more colors here (and dont forget to add ',' on previous color)
 ];
 var color_flag = 0;
