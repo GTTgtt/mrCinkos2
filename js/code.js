@@ -14,7 +14,7 @@ var body;
 
 function init(){
     body = document.body;
-    //colorWheel();
+    colorWheel();
     
     // onclick #menu-icon --> show/hide #nav
     document.getElementById('menu-icon').addEventListener('click', function(){

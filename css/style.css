@@ -1,25 +1,25 @@
 /* line 7, ../scss/base/_variables.scss */
-.color0 .themeBackgroundColor, .color0 #hr, .color0 #nav a:hover, #nav .color0 a:hover, .color0 #nav:before, .color0 header #header-content button, header #header-content .color0 button {
+.color0 .themeBackgroundColor, .color0 #hr, .color0 #nav:before, .color0 header #header-content button, header #header-content .color0 button {
   background-color: mediumorchid;
 }
 
 /* line 10, ../scss/base/_variables.scss */
-.color1 .themeBackgroundColor, .color1 #hr, .color1 #nav a:hover, #nav .color1 a:hover, .color1 #nav:before, .color1 header #header-content button, header #header-content .color1 button {
+.color1 .themeBackgroundColor, .color1 #hr, .color1 #nav:before, .color1 header #header-content button, header #header-content .color1 button {
   background-color: lightcoral;
 }
 
 /* line 13, ../scss/base/_variables.scss */
-.color2 .themeBackgroundColor, .color2 #hr, .color2 #nav a:hover, #nav .color2 a:hover, .color2 #nav:before, .color2 header #header-content button, header #header-content .color2 button {
+.color2 .themeBackgroundColor, .color2 #hr, .color2 #nav:before, .color2 header #header-content button, header #header-content .color2 button {
   background-color: blueviolet;
 }
 
 /* line 16, ../scss/base/_variables.scss */
-.color3 .themeBackgroundColor, .color3 #hr, .color3 #nav a:hover, #nav .color3 a:hover, .color3 #nav:before, .color3 header #header-content button, header #header-content .color3 button {
+.color3 .themeBackgroundColor, .color3 #hr, .color3 #nav:before, .color3 header #header-content button, header #header-content .color3 button {
   background-color: mediumseagreen;
 }
 
 /* line 19, ../scss/base/_variables.scss */
-.color4 .themeBackgroundColor, .color4 #hr, .color4 #nav a:hover, #nav .color4 a:hover, .color4 #nav:before, .color4 header #header-content button, header #header-content .color4 button {
+.color4 .themeBackgroundColor, .color4 #hr, .color4 #nav:before, .color4 header #header-content button, header #header-content .color4 button {
   background-color: darkslateblue;
 }
 
@@ -79,7 +79,6 @@
   border: 0;
   padding: 0;
   position: relative;
-  transition: all 0.5s linear;
 }
 
 /* line 1, ../scss/base/_base.scss */
@@ -88,7 +87,15 @@ html, body {
   height: 100%;
 }
 
-/* line 10, ../scss/base/_base.scss */
+/* line 6, ../scss/base/_base.scss */
+font {
+  -webkit-transition: color 0.6s linear;
+  -moz-transition: color 0.6s linear;
+  -o-transition: color 0.6s linear;
+  -webkit-transition: color 0.6s linear;
+}
+
+/* line 11, ../scss/base/_base.scss */
 h1 {
   color: gray;
   font-size: 50px;
@@ -96,14 +103,14 @@ h1 {
   text-align: right;
 }
 
-/* line 17, ../scss/base/_base.scss */
+/* line 18, ../scss/base/_base.scss */
 h4 {
   color: gray;
   line-height: 100px;
   font-size: 30px;
 }
 
-/* line 23, ../scss/base/_base.scss */
+/* line 24, ../scss/base/_base.scss */
 h5 {
   margin-top: 50px;
   color: gray;
@@ -145,9 +152,13 @@ h5 {
   width: calc(100% - 40px);
   height: 1px;
   z-index: 2;
+  -webkit-transition: background-color 0.6s linear;
+  -moz-transition: background-color 0.6s linear;
+  -o-transition: background-color 0.6s linear;
+  -webkit-transition: background-color 0.6s linear;
 }
 
-/* line 36, ../scss/layout/_menu.scss */
+/* line 38, ../scss/layout/_menu.scss */
 #nav {
   position: fixed;
   top: calc(-100% + 100px);
@@ -157,7 +168,7 @@ h5 {
   padding: 20px;
   z-index: 1;
 }
-/* line 45, ../scss/layout/_menu.scss */
+/* line 47, ../scss/layout/_menu.scss */
 #nav a {
   border-bottom: 1px solid;
   text-decoration: none;
@@ -167,13 +178,22 @@ h5 {
   padding: 30px 0;
   font-size: 25px;
   color: white;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
 }
-/* line 62, ../scss/layout/_menu.scss */
+/* line 67, ../scss/layout/_menu.scss */
 #nav a:hover {
-  color: white;
+  background-color: white;
+  color: gray;
 }
 
-/* line 68, ../scss/layout/_menu.scss */
+/* line 73, ../scss/layout/_menu.scss */
 #nav:before {
   content: '';
   position: absolute;
@@ -182,7 +202,10 @@ h5 {
   width: 100%;
   height: 100%;
   opacity: 0.95;
-  transition: all 0.5s linear;
+  -webkit-transition: background-color 0.6s linear;
+  -moz-transition: background-color 0.6s linear;
+  -o-transition: background-color 0.6s linear;
+  -webkit-transition: background-color 0.6s linear;
 }
 
 /* line 1, ../scss/layout/_header.scss */
@@ -216,9 +239,13 @@ header #header-content button {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  -webkit-transition: background-color 0.6s linear;
+  -moz-transition: background-color 0.6s linear;
+  -o-transition: background-color 0.6s linear;
+  -webkit-transition: background-color 0.6s linear;
 }
 
-/* line 32, ../scss/layout/_header.scss */
+/* line 33, ../scss/layout/_header.scss */
 #header-content:before {
   content: '';
   position: absolute;

@@ -25,6 +25,7 @@ header {
             height: 70px;
             @extend .themeBackgroundColor;
             @include border-radius;
+            @include transition(background-color, .6s);
         }
     }
 }

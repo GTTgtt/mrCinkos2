@@ -5,3 +5,10 @@
     -moz-border-radius: $radius;
     border-radius: $radius;
 }
+
+@mixin transition($prop, $time){
+    -webkit-transition: $prop $time linear;
+    -moz-transition: $prop $time linear;
+    -o-transition: $prop $time linear;
+    -webkit-transition: $prop $time linear;
+}
