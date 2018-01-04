@@ -4,27 +4,29 @@ html, body {
 }
 
 font {
-    color: $color1;
+    @extend .themeColor;
 }
 
 h1 { // header main slogan
-    color: $gray;
+    color: gray;
     font-size: 50px;
     line-height: 40px;
     text-align: right;
 }
 
 h4 { //logo font
-    color: $gray;
+    color: gray;
     line-height: 100px;
     font-size: 30px;
 }
 
 h5 { // header sub slogan
     margin-top: 50px;
-    color: $gray;
+    color: gray;
     text-align: center;
     font-size: 18px;
     line-height: 16px;
 }
+
+
 

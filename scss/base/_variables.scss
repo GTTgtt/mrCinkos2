@@ -1,6 +1,53 @@
-$gray: gray;
-$color1: darkslateblue;
 // mediumorchid
 // lightcoral
 // blueviolet
+// mediumseagreen
 // darkslateblue
+
+.color0 .themeBackgroundColor {
+    background-color: mediumorchid;
+}
+.color1 .themeBackgroundColor {
+    background-color: lightcoral;
+}
+.color2 .themeBackgroundColor {
+    background-color: blueviolet;
+}
+.color3 .themeBackgroundColor {
+    background-color: mediumseagreen;
+}
+.color4 .themeBackgroundColor {
+    background-color: darkslateblue;
+}
+
+.color0 .themeColor {
+    color: mediumorchid;
+}
+.color1 .themeColor {
+    color: lightcoral;
+}
+.color2 .themeColor {
+    color: blueviolet;
+}
+.color3 .themeColor {
+    color: mediumseagreen;
+}
+.color4 .themeColor {
+    color: darkslateblue;
+}
+
+.color0 .themeBorderColor {
+    border-color: mediumorchid;
+}
+.color1 .themeBorderColor {
+    border-color: lightcoral;
+}
+.color2 .themeBorderColor {
+    border-color: blueviolet;
+}
+.color3 .themeBorderColor {
+    border-color: mediumseagreen;
+}
+.color4 .themeBorderColor {
+    border-color: darkslateblue;
+}
