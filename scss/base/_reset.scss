@@ -4,3 +4,35 @@
     padding: 0;
     position: relative;
 }
+
+.bgColor0, #nav.bgColor_before0:before {
+    @include backgroundColor(mediumorchid);
+}
+.bgColor1, #nav.bgColor_before1:before {
+    @include backgroundColor(lightcoral);
+}
+.bgColor2, #nav.bgColor_before2:before {
+    @include backgroundColor(blueviolet);
+}
+.bgColor3, #nav.bgColor_before3:before {
+    @include backgroundColor(mediumseagreen);
+}
+.bgColor4, #nav.bgColor_before4:before {
+    @include backgroundColor(darkslateblue);
+}
+
+.txtColor0 {
+    @include textColor(mediumorchid);
+}
+.txtColor1 {
+    @include textColor(lightcoral);
+}
+.txtColor2 {
+    @include textColor(blueviolet);
+}
+.txtColor3 {
+    @include textColor(mediumseagreen);
+}
+.txtColor4 {
+    @include textColor(darkslateblue);
+}

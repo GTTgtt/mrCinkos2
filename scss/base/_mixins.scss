@@ -12,3 +12,17 @@
     -o-transition: $prop $time linear;
     -webkit-transition: $prop $time linear;
 }
+
+
+// themes
+@mixin backgroundColor($color){
+    background-color: $color;
+}
+
+@mixin textColor($color){
+    color: $color;
+}
+
+@mixin borderColor($corlo){
+    border-color: $color;
+}

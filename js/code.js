@@ -1,16 +1,5 @@
-/*
-var colors = [
-    'mediumorchid',
-    'lightcoral',
-    'blueviolet',
-    'mediumseagreen',
-    'darkslateblue'
-    // add more colors here (and dont forget to add ',' on previous color)
-];
-*/
 var color_flag = 0;
 var nav_flag = 0;
-var body;
 
 function init(){
     body = document.body;
@@ -31,13 +20,26 @@ function init(){
 }
 
 function colorWheel(){
-    body.className = 'color' + color_flag;
+    var font0 = document.querySelectorAll('font')[0];
+    var font1 = document.querySelectorAll('font')[1];
+    var hr = document.querySelector('#hr');
+    var button = document.querySelector('button');
+    var nav = document.querySelector('#nav');
+    
+    font0.className = 'txtColor' + color_flag;
+    font1.className = 'txtColor' + color_flag;
+    hr.className = 'bgColor' + color_flag;
+    button.className = 'bgColor' + color_flag;
+    nav.className = 'bgColor_before' + color_flag;
+    
     color_flag++;
+    
     setInterval(function(){
-        //document.querySelectorAll('font')[0].style.color = colors[color_flag];
-        //document.querySelectorAll('font')[1].style.color = colors[color_flag];
-        //document.querySelector('#hr').style.backgroundColor = colors[color_flag];
-        body.className = 'color' + color_flag;
+        font0.className = 'txtColor' + color_flag;
+        font1.className = 'txtColor' + color_flag;
+        hr.className = 'bgColor' + color_flag;
+        button.className = 'bgColor' + color_flag;
+        nav.className = 'bgColor_before' + color_flag;
         
         if(color_flag == 4) color_flag= 0;
         else color_flag++;

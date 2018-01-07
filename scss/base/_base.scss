@@ -4,7 +4,6 @@ html, body {
 }
 
 font {
-    @extend .themeColor;
     @include transition(color, .6s);
 }
 
